@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>To Do List</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1 style="margin-left: 30px; margin-top: 30px; font-size: 40px;">To Do</h1>
+            
+            <div class="grid-container">
+                <div class="grid-item" id="item1">
+                    <span class="title" id="list1-title">First Note</span>
+                    <span class="body" id="list1-body">Lorem ipsum</span>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" id="item2">
+                    <span class="title" id="list2-title"></span>
+                    <span class="body" id="list2-body"></span>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" id="item3">
+                    <span class="title" id="list3-title"></span>
+                    <span class="body" id="list3-body"></span>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" id="item4">
+                    <span class="title" id="list4-title"></span>
+                    <span class="body" id="list4-body"></span>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" id="item5">
+                    <span class="title" id="list5-title"></span>
+                    <span class="body" id="list5-body"></span>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" id="item6">
+                    <span class="title" id="list6-title"></span>
+                    <span class="body" id="list6-body"></span>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" id="item7">
+                    <span class="title" id="list7-title"></span>
+                    <span class="body" id="list7-body"></span>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" id="item8">
+                    <span class="title" id="list8-title"></span>
+                    <span class="body" id="list8-body"></span>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" id="item9">
+                    <span class="title" id="list9-title"></span>
+                    <span class="body" id="list9-body"></span>
+                </div>
+            </div>
+            
+        </main>
+
+        <style>
+            main {
+                width: 100%; margin: 0; padding: 0; background-color: white;
+            }
+            .grid-container {
+                display: grid;
+                width: 80%; max-width: 1400px; margin: auto;
+                grid-template-rows: auto;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 10px;
+                grid-template-areas:
+                    '#item1 #item2 #item3 #item4 #item5 #item6' 
+                    '#item7 #item8 #item9 #item10 #item11 #item12';
+            }
+            .grid-item {
+                display: flex; flex-direction: column; 
+                padding: 10px; border: 1px solid darkgrey; box-shadow: 5px 5px 10px lightgrey; border-radius: 10px;
+                height: 200px;
+            }
+            .grid-item .title {
+                font-size: 26px !important; color: black;
+            }
+            .grid-item .body {
+                font-size: 14px; color: black;
+            }
+        </style>
+    </body>
+</html>
